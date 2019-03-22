@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   get 'sales/new'
-  
   resources :sales, only: [:create]
 
   root 'sales#new'
